@@ -11,9 +11,10 @@ jobs:
   build-and-push:
     runs-on: todoui
 
-      IMAGE_TAG: v1
+      
     env:
       IMAGE_NAME: todo-ui
+      IMAGE_TAG: v1
       ACR_NAME: b17g2aksregistry
       ACR_LOGIN_SERVER: b17g2aksregistry.azurecr.io
 
