@@ -11,9 +11,9 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
+      IMAGE_TAG: v1
     env:
       IMAGE_NAME: todo-ui
-      IMAGE_TAG: v1
       ACR_NAME: b17g2aksregistry
       ACR_LOGIN_SERVER: b17g2aksregistry.azurecr.io
 
@@ -24,9 +24,9 @@ jobs:
       - name: Azure Login
         uses: Azure/login@v2.3.0
         with:
-          client-id: ff27bcf6-f60c-4a57-8b01-8eee5de2a9cd
-          tenant-id: 0f7010fd-209e-4344-8457-043ffb37143b
-          subscription-id: 1075ec7a-b17a-4f37-bf3f-9d68c4506dc1
+          client-id: 2482a26b-0879-445e-b5d7-bb4aaed89e46
+          tenant-id: c5a4bf24-fe14-4945-9d5b-ce2d45cd7404
+          subscription-id: b398fea1-2f06-4948-924a-121d4ed265b0
 
       - name: Log in to ACR
         run: |
