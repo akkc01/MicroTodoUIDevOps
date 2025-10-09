@@ -34,12 +34,12 @@ jobs:
           az acr login --name b17g2aksregistry
 
 
-      - name: Debug Environment
-        shell: pwsh
-        run: |
-          Write-Host "Shell is PowerShell"
-          Write-Host "IMAGE_NAME: $env:IMAGE_NAME"
-          Write-Host "IMAGE_TAG: $env:IMAGE_TAG"
+      # - name: Debug Environment
+      #   shell: pwsh
+      #   run: |
+      #     Write-Host "Shell is PowerShell"
+      #     Write-Host "IMAGE_NAME: $env:IMAGE_NAME"
+      #     Write-Host "IMAGE_TAG: $env:IMAGE_TAG"
           
       # - name: Build Docker Image
       #   run: |
@@ -48,7 +48,7 @@ jobs:
       - name: Build Docker Image
         shell: pwsh
         run: |
-          Write-Host "Building docker image with tag: $env:IMAGE_NAME:$env:IMAGE_TAG"
+          # Write-Host "Building docker image with tag: $env:IMAGE_NAME:$env:IMAGE_TAG"
           docker build -t $env:IMAGE_NAME:$env:IMAGE_TAG .
 
       - name: Tag Docker Image for ACR
