@@ -9,7 +9,7 @@ permissions:
   
 jobs:
   build-and-push:
-    runs-on: akkc
+    runs-on: [self-hosted, Windows, X64]
 
       
     env:
