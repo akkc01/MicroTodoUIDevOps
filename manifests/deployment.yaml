@@ -4,6 +4,7 @@ metadata:
   name: todo-ui
 spec:
   replicas: 1
+  selector:
     matchLabels:
       app: todo-ui
   template:
